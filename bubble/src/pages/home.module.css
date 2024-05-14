@@ -1,0 +1,42 @@
+.gridBase {
+  display: grid;
+  background-color: var(--mantine-color-backgroundColor-1);
+  grid-template-columns: 1fr 800px 30em;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  grid-template-areas:
+      "h h h"
+      "l main r"
+      "ft ft ft";
+}
+
+.gridHeader {
+  grid-area: h;
+}
+
+.gridLeft {
+  grid-area: l;
+  padding: 20px 0;
+}
+
+.gridRight {
+  display: flex;
+    grid-area: r;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gridMain {
+  display: flex;
+    flex-flow: column;
+    grid-area: main;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridFooter {
+  grid-area: ft;
+  padding: 20px 0;
+}

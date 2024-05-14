@@ -1,0 +1,36 @@
+.paper {
+  padding: 20px;
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: auto;
+  background-color: var(--mantine-color-gray-0);
+  margin: 1em;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.paper:hover {
+  background-color: var(--mantine-color-gray-1);
+}
+
+.titleAndDetails {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.eventListContainer {
+  display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mantine-Modal-title {
+  font-size: 3em;
+  font-weight: 600;
+}

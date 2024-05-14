@@ -1,0 +1,101 @@
+.popupContainer {
+  padding-top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 6fr 0.75fr;
+  grid-row-gap: 0.5em;
+  grid-column-gap: 3em;
+  grid-template-areas:
+      "h h"
+      "mainl mainr"
+      "ft ft";
+}
+
+.TitleAndDetailsContainer {
+  grid-area: h;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerContainer{
+  grid-area: ft;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.mainLeftContainer{
+    grid-area: mainl;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1em;
+}
+
+.mainRightContainer {
+    grid-area: mainr;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 1em;
+  }
+
+.dateTimeContainer {
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.locationContainer {
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.dateTimeLocationContainer {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5em;
+  width: 100%;
+}
+
+.descriptionText{
+  margin: 0;
+  padding: 0.5em;
+  border: 1px solid #9eadad;
+  border-radius: 8px;
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  color: #264143;
+}
+
+.attendeesContainer {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.attendeesListContainer{
+  width: 100%;
+  height: 17em;
+  border: 1px solid #9eadad;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.attendeesScrollContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5em;
+  overflow-y: auto;
+  max-height: 100%;
+}

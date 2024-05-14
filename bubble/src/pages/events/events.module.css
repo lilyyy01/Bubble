@@ -1,0 +1,46 @@
+.gridBase {
+    display: grid;
+    background-color: var(--mantine-color-backgroundColor-1);
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto 1fr 2fr auto;
+    grid-gap: 10px;
+    grid-template-areas:
+        "h h"
+        "l rt"
+        "l rb"
+        "ft ft";
+}
+
+.gridHeader {
+    grid-area: h;
+}
+
+.gridLeft {
+    grid-area: l;
+    padding: 10px 0 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gridRightTop {
+    display: flex;
+    grid-area: rt;
+    padding: 10px 10px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gridRightBottom {
+    display: flex;
+    grid-area: rb;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gridFooter {
+    grid-area: ft;
+    padding: 20px 0;
+}
